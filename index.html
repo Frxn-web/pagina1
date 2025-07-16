@@ -36,24 +36,7 @@
             padding: 10px;
             background: rgba(255,255,255,0.1);
             margin-bottom: 10px;
-        }
-
-        .banner-placeholder {
-            background: linear-gradient(45deg, #ff6b6b, #ffa726);
-            color: white;
-            padding: 35px;
-            border-radius: 10px;
-            font-weight: bold;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            max-width: 728px;
-            margin: 0 auto;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
+            min-height: 90px; /* Reserve space for the ad */
         }
 
         .nav-container {
@@ -230,12 +213,7 @@
         /* Banner 300x250 en sidebar */
         .banner-sidebar {
             text-align: center;
-            background: linear-gradient(45deg, #4facfe, #00f2fe);
-            color: white;
-            padding: 125px 20px;
-            border-radius: 10px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            min-height: 250px; /* Reserve space for the ad */
         }
 
         /* Native Ad Spaces */
@@ -258,18 +236,18 @@
             right: 0;
             background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
-            padding: 15px;
+            padding: 10px;
             text-align: center;
             z-index: 1000;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+            min-height: 50px; /* Reserve space for social bar ad */
         }
-
-        .social-bar-placeholder {
-            background: rgba(255,255,255,0.2);
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            font-weight: bold;
+        
+        .social-bar-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
         }
 
         /* Trending Section */
@@ -318,14 +296,8 @@
                 padding: 20px;
             }
             
-            .banner-placeholder {
-                padding: 25px 10px;
-                font-size: 0.9rem;
-            }
-            
             .social-bar {
-                padding: 10px;
-                font-size: 0.9rem;
+                padding: 5px;
             }
         }
 
@@ -351,14 +323,24 @@
             font-size: 1.2rem;
         }
     </style>
+    <!-- General Ad Script -->
+    <script type='text/javascript' src='//needleunderstandtraveller.com/4a/8f/cc/4a8fccbb93130b3566f0b41d2590f14f.js'></script>
 </head>
 <body>
     <!-- Header with Top Banner Space -->
     <header class="header">
         <div class="banner-top">
-            <div class="banner-placeholder">
-                📢 ESPACIO BANNER 728x90 - ADSTERRA DISPLAY AD
-            </div>
+            <!-- Ad Script 728x90 -->
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'e89faeeddcf2e260214fb445aafc8b22',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//needleunderstandtraveller.com/e89faeeddcf2e260214fb445aafc8b22/invoke.js"></script>
         </div>
         <nav class="nav-container">
             <div class="logo">⚽ FutbolLatino Pro</div>
@@ -380,12 +362,14 @@
                 <p class="hero-subtitle">Noticias, transferencias y resultados en tiempo real</p>
             </section>
 
-            <!-- Native Ad Space -->
+            <!-- In-Page Push Ad Space -->
             <div class="native-ad">
-                📱 ESPACIO NATIVE AD - INTEGRADO CON CONTENIDO
+                <script async="async" data-cfasync="false" src="//needleunderstandtraveller.com/455c0706e65ed4ab401be2479987c108/invoke.js"></script>
+                <div id="container-455c0706e65ed4ab401be2479987c108"></div>
             </div>
 
             <div class="news-grid">
+                <!-- News Card 1 -->
                 <article class="news-card">
                     <div class="news-image">⚽</div>
                     <div class="news-content">
@@ -398,6 +382,7 @@
                     </div>
                 </article>
 
+                <!-- News Card 2 -->
                 <article class="news-card">
                     <div class="news-image">🏆</div>
                     <div class="news-content">
@@ -410,6 +395,7 @@
                     </div>
                 </article>
 
+                <!-- News Card 3 -->
                 <article class="news-card">
                     <div class="news-image">💰</div>
                     <div class="news-content">
@@ -422,6 +408,7 @@
                     </div>
                 </article>
 
+                <!-- News Card 4 -->
                 <article class="news-card">
                     <div class="news-image">🥅</div>
                     <div class="news-content">
@@ -433,35 +420,6 @@
                         </div>
                     </div>
                 </article>
-
-                <article class="news-card">
-                    <div class="news-image">📱</div>
-                    <div class="news-content">
-                        <h2 class="news-title"><span class="country-flag">🇺🇾</span>Cavani Anuncia su Retiro: "Ha Llegado el Momento"</h2>
-                        <p class="news-excerpt">El delantero uruguayo sorprende al mundo con su decisión. Una carrera llena de éxitos llega a su fin...</p>
-                        <div class="news-meta">
-                            <span>⏰ Hace 8 horas</span>
-                            <a href="#" class="read-more">Leer más</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="news-image">🎯</div>
-                    <div class="news-content">
-                        <h2 class="news-title"><span class="country-flag">🇵🇪</span>Selección Peruana: Convocatoria Sorpresa para las Eliminatorias</h2>
-                        <p class="news-excerpt">El técnico peruano incluye jóvenes promesas en la lista. Conoce a los nuevos talentos que buscan un lugar...</p>
-                        <div class="news-meta">
-                            <span>⏰ Hace 10 horas</span>
-                            <a href="#" class="read-more">Leer más</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Native Ad Space -->
-            <div class="native-ad">
-                🎮 ESPACIO NATIVE AD - GAMING/APPS MÓVILES
             </div>
         </main>
 
@@ -470,7 +428,17 @@
             <!-- Banner 300x250 -->
             <div class="sidebar-widget">
                 <div class="banner-sidebar">
-                    📱 BANNER 300x250<br>ADSTERRA AD SPACE
+                    <!-- Ad Script 300x250 -->
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'adac7c779139738800704bcae26e6975',
+                            'format' : 'iframe',
+                            'height' : 250,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//needleunderstandtraveller.com/adac7c779139738800704bcae26e6975/invoke.js"></script>
                 </div>
             </div>
 
@@ -478,36 +446,12 @@
             <div class="sidebar-widget">
                 <h3 class="widget-title">🔥 Trending Ahora</h3>
                 <ul class="trending-list">
-                    <li class="trending-item">
-                        <span class="trending-number">1</span>
-                        <span>Messi vs Cristiano: ¿Quién es mejor?</span>
-                    </li>
-                    <li class="trending-item">
-                        <span class="trending-number">2</span>
-                        <span>Eliminatorias Sudamericanas 2025</span>
-                    </li>
-                    <li class="trending-item">
-                        <span class="trending-number">3</span>
-                        <span>Copa América: Sedes confirmadas</span>
-                    </li>
-                    <li class="trending-item">
-                        <span class="trending-number">4</span>
-                        <span>Mercado de fichajes invierno</span>
-                    </li>
-                    <li class="trending-item">
-                        <span class="trending-number">5</span>
-                        <span>Mundial 2026: Todo lo que sabemos</span>
-                    </li>
+                    <li class="trending-item"><span class="trending-number">1</span><span>Messi vs Cristiano: ¿Quién es mejor?</span></li>
+                    <li class="trending-item"><span class="trending-number">2</span><span>Eliminatorias Sudamericanas 2025</span></li>
+                    <li class="trending-item"><span class="trending-number">3</span><span>Copa América: Sedes confirmadas</span></li>
+                    <li class="trending-item"><span class="trending-number">4</span><span>Mercado de fichajes invierno</span></li>
+                    <li class="trending-item"><span class="trending-number">5</span><span>Mundial 2026: Todo lo que sabemos</span></li>
                 </ul>
-            </div>
-
-            <!-- Native Ad Widget -->
-            <div class="sidebar-widget">
-                <h3 class="widget-title">📱 Recomendado</h3>
-                <div class="native-ad">
-                    NATIVE AD WIDGET<br>
-                    VPN/UTILITY APPS
-                </div>
             </div>
 
             <!-- Quick Stats -->
@@ -533,49 +477,11 @@
 
     <!-- Social Bar (Fixed Bottom) -->
     <div class="social-bar">
-        <div class="social-bar-placeholder">
-            📱 SOCIAL BAR - ADSTERRA AD FORMAT (Mobile Optimized)
+        <div class="social-bar-content">
+            <!-- Social Bar Ad Script -->
+            <script type='text/javascript' src='//needleunderstandtraveller.com/64/ea/dd/64eadd9c5202d589f253a6459b2b67da.js'></script>
         </div>
     </div>
 
-    <!-- Popunder Code Placeholder -->
-    <script>
-        // AQUÍ VA EL CÓDIGO DE POPUNDER DE ADSTERRA
-        console.log("🚀 Popunder Adsterra Code Here");
-        
-        // Simular interactividad para engagement
-        document.addEventListener('DOMContentLoaded', function() {
-            // Efecto click en cards
-            const newsCards = document.querySelectorAll('.news-card');
-            newsCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Aquí se activaría el popunder
-                    console.log('📊 Engagement: Card clicked - Popunder trigger');
-                });
-            });
-
-            // Simular actualizaciones en vivo
-            setInterval(() => {
-                const liveIndicators = document.querySelectorAll('.live-indicator');
-                liveIndicators.forEach(indicator => {
-                    indicator.style.opacity = indicator.style.opacity === '0.5' ? '1' : '0.5';
-                });
-            }, 1000);
-        });
-
-        // Analytics tracking simulation
-        function trackPageView() {
-            console.log('📈 Page view tracked - Adsterra impression');
-        }
-
-        function trackUserEngagement(action) {
-            console.log(`🎯 User engagement: ${action}`);
-        }
-
-        // Simular métricas para Adsterra
-        setTimeout(() => {
-            trackPageView();
-        }, 1000);
-    </script>
 </body>
 </html>
